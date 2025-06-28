@@ -21,7 +21,10 @@
 
 		<!-- load blacklist, config-->
 		<rosparam command="load" file="$(arg pluginlists_yaml)" />
-		<rosparam command="load" file="$(arg config_yaml)" />
-
+		<rosparam command="load" file="$(arg config_yaml)" /> 
+    
 	</node>
+
+    <!-- <node pkg="mavros" type="px4_param_loader.sh" name="px4_param_loader" output="screen" launch-prefix="bash" /> -->
+
 </launch>
